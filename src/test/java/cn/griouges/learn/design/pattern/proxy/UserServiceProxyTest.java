@@ -16,8 +16,9 @@ public class UserServiceProxyTest {
         
         UserTableObserver userTableObserver = new UserTableObserver(subject); //用户表观察者
         userTableObserver.register(); //向数据表主题注册观察者
+    
+        UserDao proxy = (UserDao) new UserServiceProxy(new UserService(), subject).getProxy(); //获得代理对象,向数据库保存记录后通知观察者进行同步
         
-        UserDao proxy = (UserDao) new UserServiceProxy(new UserService(), subject).getProxy();
         proxy.save(new User("lisi", 20));
     }
 }
