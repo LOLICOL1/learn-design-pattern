@@ -32,7 +32,7 @@ public class UserTableObserver implements Observer {
     @Override
     public void update(Subject subject, Object args) {
         //sync table
-        System.out.println(args == null ? "" : args + " 同步成功!");
+        System.out.println((args == null ? "" : args) + " 同步成功!");
     }
     
     /**
@@ -40,5 +40,12 @@ public class UserTableObserver implements Observer {
      */
     public void register(){
         subject.registerObserver(this);
+    }
+    
+    /**
+     * 主题中删除自己
+     */
+    public void unregister() {
+        subject.removeObserver(this);
     }
 }
