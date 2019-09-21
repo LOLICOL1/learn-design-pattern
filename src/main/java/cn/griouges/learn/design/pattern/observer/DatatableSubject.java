@@ -5,6 +5,7 @@ import java.util.List;
 
 /**
  * 数据表主题，用于通知所有注册的观察者。
+ *
  * @author Liar
  */
 public class DatatableSubject implements Subject {

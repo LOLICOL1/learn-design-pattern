@@ -3,9 +3,9 @@ package cn.griouges.learn.design.pattern.observer;
 /**
  * 用户数据表观察者。订阅数据表主题，收到通知后将会进行同步数据表操作。
  *
+ * @author Liar
  * @see Subject
  * @see DatatableSubject
- * @author Liar
  */
 public class UserTableObserver implements Observer {
     
@@ -15,7 +15,7 @@ public class UserTableObserver implements Observer {
      * @param subject 主题
      */
     public UserTableObserver(Subject subject) {
-        this.subject=subject;
+        this.subject = subject;
     }
     
     @Override
@@ -38,7 +38,7 @@ public class UserTableObserver implements Observer {
     /**
      * 向主题中注册自己
      */
-    public void register(){
+    public void register() {
         subject.registerObserver(this);
     }
     

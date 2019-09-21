@@ -9,6 +9,7 @@ import java.lang.reflect.Proxy;
 /**
  * 用户服务的代理类。
  * 方法：{@link UserServiceProxy#getProxy}用于获得代理对象
+ *
  * @author Liar
  */
 public class UserServiceProxy {
