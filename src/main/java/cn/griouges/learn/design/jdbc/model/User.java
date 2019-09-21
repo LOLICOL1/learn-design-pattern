@@ -1,4 +1,4 @@
-package cn.griouges.learn.jdbc.model;
+package cn.griouges.learn.design.jdbc.model;
 
 /**
  * @author Liar

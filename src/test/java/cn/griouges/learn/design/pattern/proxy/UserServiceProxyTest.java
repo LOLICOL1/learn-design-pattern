@@ -1,11 +1,11 @@
 package cn.griouges.learn.design.pattern.proxy;
 
+import cn.griouges.learn.design.jdbc.dao.UserDao;
+import cn.griouges.learn.design.jdbc.model.User;
+import cn.griouges.learn.design.jdbc.service.UserService;
 import cn.griouges.learn.design.pattern.observer.DatatableSubject;
 import cn.griouges.learn.design.pattern.observer.Subject;
 import cn.griouges.learn.design.pattern.observer.UserTableObserver;
-import cn.griouges.learn.jdbc.dao.UserDao;
-import cn.griouges.learn.jdbc.model.User;
-import cn.griouges.learn.jdbc.service.UserService;
 import org.junit.Test;
 
 public class UserServiceProxyTest {
