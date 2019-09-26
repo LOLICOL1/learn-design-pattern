@@ -1,4 +1,4 @@
-package cn.griouges.learn.design.adapter;
+package cn.griouges.learn.design.pattern.adapter;
 
 import java.util.Enumeration;
 import java.util.Iterator;
